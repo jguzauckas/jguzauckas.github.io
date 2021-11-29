@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+<!--These two scripts set up and enable LaTeX writing for the website-->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=OpenSans">
 <style>
@@ -12,13 +20,21 @@ body {
 
 <body>
 
-<h1 style="text-align:center;">This is John's website</h1>
+<h1 style="text-align:center;">Welcome to the Website of John Guzauckas!</h1>
 <hr>
-<p>Welcome <small>my <small>friends</small></small></p>
+<p>I just figured out TeX integration, so now I can write</p>
+<p>
+    $$ \begin{array}{lclclclclclcr}
+    1a &+& 1b &+& 0c &+& 0d &+& 1e &+& 0f & = & 11\\
+    0a &+& 0b &+& 0c &+& 1d &+& 1e &+& 1f & = & 12\\
+    1a &+& 0b &+& 1c &+& 1d &+& 0e &+& 0f & = & 14\\
+    1a &+& 1b &+& 1c &+& 1d &+& 1e &+& 1f & = & 20\\
+    \end{array} $$
+</p>
 <p>I love math but have always been interested in the trades. Fortunately, mathematics has me covered:</p>
 <blockquote cite="https://en.wikipedia.org/wiki/Plumbing_(mathematics)">
     In the mathematical field of geometric topology, among the techniques known as surgery theory, the process of <b>plumbing</b> is a way to create new manifolds out of disk bundles. It was first described by John Milnor[1] and subsequently used extensively in surgery theory to produce manifolds and normal maps with given surgery obstructions.
 </blockquote>
-<p>This was quoted from the <a href="https://en.wikipedia.org/wiki/Plumbing_(mathematics)">wikipedia page</a> for Plumbing in mathematics.</p>
+<p>This was quoted from the <a href="https://en.wikipedia.org/wiki/Plumbing_(mathematics)">Wikipedia page</a> for Plumbing in mathematics.</p>
 </body>
 </html>
